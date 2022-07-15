@@ -87,16 +87,27 @@
                                     <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PxJ-g0-Fcj"/>
                                 </connections>
                             </button>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="lnp-Dt-1US">
+                                <rect key="frame" x="50" y="799" width="314" height="4"/>
+                            </progressView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.20784312490000001" green="0.25098040700000002" blue="0.32549020649999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
+                            <constraint firstItem="lnp-Dt-1US" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6mU-PO-5Bg"/>
                             <constraint firstItem="Xp3-w9-iwE" firstAttribute="top" secondItem="DiH-jr-bEm" secondAttribute="bottom" constant="30" id="90U-cI-8va"/>
                             <constraint firstItem="DiH-jr-bEm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JLz-lJ-gkD"/>
                             <constraint firstItem="DiH-jr-bEm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="Jof-Oa-J4M"/>
                             <constraint firstItem="Xp3-w9-iwE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="N81-rA-RbB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lnp-Dt-1US" secondAttribute="trailing" constant="50" id="WEa-xf-fGd"/>
+                            <constraint firstItem="lnp-Dt-1US" firstAttribute="top" secondItem="Xp3-w9-iwE" secondAttribute="bottom" constant="39" id="cUF-te-N9Y"/>
+                            <constraint firstItem="lnp-Dt-1US" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="ykF-sZ-waL"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="mainLabel" destination="DiH-jr-bEm" id="Bxs-pQ-VZr"/>
+                        <outlet property="progressBar" destination="lnp-Dt-1US" id="gre-nP-TQF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
